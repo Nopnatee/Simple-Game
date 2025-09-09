@@ -171,7 +171,7 @@ def main():
         renderer.surface.blit(text, (8, 8))
         pygame.display.update((0, 0, 320, 32))
 
-        renderer.clock.tick(args.fps)
+        renderer.clock.tick(args.fps/4)
 
     pygame.quit()
     sys.exit(0)
