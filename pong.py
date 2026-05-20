@@ -27,13 +27,7 @@ ACCENT = (112, 194, 255)
 
 
 class Paddle:
-    def __init__(self, x):
-        self.rect = pygame.Rect(x, HEIGHT // 2 - PADDLE_HEIGHT // 2, PADDLE_WIDTH, PADDLE_HEIGHT)
-        self.score = 0
-
-    def move(self, direction, dt):
-        self.rect.y += int(direction * PADDLE_SPEED * dt)
-        self.rect.clamp_ip(pygame.Rect(0, 0, WIDTH, HEIGHT))
+    
 
 
 class Ball:
