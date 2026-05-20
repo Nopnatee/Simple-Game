@@ -11,7 +11,7 @@ FPS = 60
 PADDLE_WIDTH = 16
 PADDLE_HEIGHT = 104
 PADDLE_MARGIN = 42
-PADDLE_SPEED = 520
+PADDLE_SPEED = 400
 
 BALL_SIZE = 16
 BALL_SPEED_START = 430
@@ -28,7 +28,7 @@ ACCENT = (112, 194, 255)
 
 class Paddle:
     def __init__(self, x):
-        self.rect = pygame.Rect(x, HEIGHT // 2 - PADDLE_HEIGHT // 2, PADDLE_WIDTH, PADDLE_HEIGHT)
+        self.rt = pygame.Rect(x, HEIGHT // 2 - PADDLE_HEIGHT // 2, PADDLE_WIDTH, PADDLE_HEIGHT)
         self.score = 0
 
     def move(self, direction, dt):
